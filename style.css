@@ -77,4 +77,83 @@ nav ul li a:hover::after{
 
 .header-text h1 span{
     color: #c669e1;
+    transition: 0.5s;
+}
+
+.header-text h1 span:hover{
+    text-shadow:
+    0 0 42px #c669e1,
+    0 0 82px #c669e1;
+}
+
+/* -------------------about------------------ */
+
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 30%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.about-col-1 img:hover{
+    box-shadow: 0 0 20px #808080;
+}
+
+.about-col-2{
+    flex-basis: 65%;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.sub-title:hover{
+    text-shadow:
+    0 0 42px #808080;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;    
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #c669e1;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
+}
+
+.tab-links:hover::after{
+    width: 100%;
 }
