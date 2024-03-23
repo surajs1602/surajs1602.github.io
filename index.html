@@ -9,6 +9,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css"> 
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/7e91d845d3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
@@ -18,7 +19,6 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -68,10 +68,59 @@
             </div>
         </div>
     </div>
-    <!-- ------------------services----------------------- -->
-    <div id="services">
+    <!-- ------------------portfolio----------------------- -->
+    <div id="portfolio">
         <div class="container">
-            
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non saepe autem quo vel unde ipsum eos! Autem consequatur minus repellendus ipsum, corrupti doloribus nostrum officia qui ab! Impedit, reprehenderit sit!</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non saepe autem quo vel unde ipsum eos! Autem consequatur minus repellendus ipsum, corrupti doloribus nostrum officia qui ab! Impedit, reprehenderit sit!</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non saepe autem quo vel unde ipsum eos! Autem consequatur minus repellendus ipsum, corrupti doloribus nostrum officia qui ab! Impedit, reprehenderit sit!</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------contact----------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <!-- <p><i class="fa-regular fa-envelope"></i>sharmathesuraj@gmail.com</p> -->
+                    <!-- <p><i class="fa-solid fa-phone"></i>1234567890</p> -->
+                    <div class="social-icons">
+                        <a href=""><i class="fa-regular fa-envelope"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></i></a>
+                        <a href=""><i class="fa-brands fa-square-github"></i></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></i></a>
+                    </div>
+                    <a href="" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="#">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="2" placeholder="Your Message"></textarea>
+                        <br>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </body>
