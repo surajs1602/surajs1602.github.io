@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: #080808;
     color: #fff;
@@ -62,7 +66,7 @@ nav ul li a:hover::after{
 }
 
 .header-text{
-    margin-top: 20%;
+    margin-top: 30%;
     font-size: 20px;
 }
 
@@ -160,7 +164,6 @@ nav ul li a:hover::after{
 
 .tab-contents ul li{
     list-style: none;
-    margin: 10px 0;
 
 }
 
@@ -325,4 +328,234 @@ form .btn{
 
 .copyright i{
     color: #ff264f;
+}
+
+/* ------------page-responsive---------- */
+nav .fa-solid{
+    display: none;
+}
+
+/* ----------1080px------------ */
+@media only screen and (max-width:1080px){
+    #header{
+        background-image: url(assets/background_850.jpg);
+    }
+
+    .header-text{
+        margin-top: 40%;
+        font-size: 30px;
+    }
+
+    .header-text p{
+        padding-left: 0px;
+    }
+
+    .header-text h1{
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-width:760px){
+    .header-text{
+        margin-top: 80%;
+        font-size: 30px;
+    }
+
+    .header-text h1{
+        font-size: 35px;
+    }
+
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul{
+        background: #c669e1;
+        position: fixed;
+        top: 0;
+        right: -150px;
+        width: 150px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul li a{
+        color: #080808;
+    }
+
+    nav ul li a::after{
+        background:#080808;
+        font-weight: 700;
+    }
+
+    nav ul i{
+        color: #080808;
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+    }
+
+    .sub-title{
+        font-size: 40px;
+    }
+
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+
+    .about-col-1 img{
+        width: 100%;
+    }
+
+    .about-col-2{
+        font-size: 14px;
+    }
+
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+
+    .copyright{
+        font-size: 14px;
+    }
+
+    .btn{
+        font-size: 15px;
+    }
+}
+
+/* ----------850px------------ */
+@media only screen and (max-width:550px){
+    #header{
+        margin-top: 5px;
+        background-image: url(assets/background_mob.jpg);
+    }
+
+    .header-text{
+        margin-top: 110%;
+        font-size: 20px;
+    }
+    
+    .header-text p{
+        padding-left: 0px;
+    }
+
+    .header-text h1{
+        font-size: 25px;
+    }
+
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul{
+        background: #c669e1;
+        position: fixed;
+        top: 0;
+        right: -150px;
+        width: 150px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul li a{
+        color: #080808;
+    }
+
+    nav ul li a::after{
+        background:#080808;
+        font-weight: 700;
+    }
+
+    nav ul i{
+        color: #080808;
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+    }
+
+    .sub-title{
+        font-size: 40px;
+    }
+
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+
+    .about-col-1 img{
+        width: 100%;
+    }
+
+    .about-col-2{
+        font-size: 14px;
+    }
+
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+
+    .copyright{
+        font-size: 14px;
+    }
+
+    .btn{
+        font-size: 15px;
+    }
+}
+
+/* ---------------1280px---------------- */
+
+@media only screen and (max-width:1650px){
+    
+    .sub-title{
+        font-size: 30px;
+    }
+}
+
+#success-msg{
+    color: aquamarine;
+    display: block;
+    margin-top: -15px;
 }
