@@ -49,11 +49,11 @@ function doPost (e) {
 ```
 
 Steps to use the #Google Script :
-    Step 1: Create a Google Sheet
-    Step 2: Create 3 coloums naming: [Name	Email	Message]
-    Step 3: Open Extensions from Menu bar  -> App Script
-    Step 4: Create a new Script
-    Step 5: Paste the Code from above
-    Step 6: Do a new deployment
-    Step 7: Allow permissions
-    Step 8: Embeed the URL in your code .js file or <script>z
+    Step 1: Create a Google Sheet  
+    Step 2: Create 3 coloums naming: [Name	Email	Message]  
+    Step 3: Open Extensions from Menu bar  -> App Script  
+    Step 4: Create a new Script  
+    Step 5: Paste the Code from above  
+    Step 6: Do a new deployment  
+    Step 7: Allow permissions  
+    Step 8: Embeed the URL in your code .js file or <script>  
