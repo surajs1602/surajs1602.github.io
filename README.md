@@ -5,7 +5,7 @@
 The contact section is working on a gs (Google Script):
 Google Script code below
 
-`
+```
 var sheetName = 'Sheet1'
 var scriptProp = PropertiesService.getScriptProperties()
 
@@ -34,19 +34,19 @@ function doPost (e) {
     return ContentService
       .createTextOutput(JSON.stringify({ 'result': 'success', 'row': nextRow }))
       .setMimeType(ContentService.MimeType.JSON)
-  }
+    }
 
   catch (e) {
     return ContentService
       .createTextOutput(JSON.stringify({ 'result': 'error', 'error': e }))
       .setMimeType(ContentService.MimeType.JSON)
-  }
+    }
 
   finally {
     lock.releaseLock()
   }
 }
-`
+```
 
 Steps to use the #Google Script :
     Step 1: Create a Google Sheet
