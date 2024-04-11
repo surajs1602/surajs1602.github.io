@@ -232,8 +232,118 @@ nav ul li a:hover::after{
     color: #080808;
     font-weight: 500;
     padding-bottom: 10px;
+    cursor: pointer;
 }
 
+.work-list.disable{
+    display: none;
+}
+
+.work-blocks{
+    display: none;
+    grid-gap: 40px;
+    margin-top: 50px;
+    transition: 0.5s;
+}
+
+.work-blocks.active-block{
+    display: block;
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.work-blocks.active-block:hover{
+    /* background: #c669e1; */
+    /* color: #080808; */
+    transform: translate3d(0,-10px,1000px);
+}
+
+.work-blocks.active-block i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.work-blocks.active-block i.cross{
+    font-size: 25px;
+    cursor: pointer;
+    top: 2px;
+    left: 5px;
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 300;
+    transition: 0.5s;
+}
+
+.work-blocks.active-block i.cross:hover{
+    color: #c669e1;
+    /* font-size: 27px; */
+    font-weight: 500;
+}
+
+.work-blocks.active-block h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.work-blocks.active-block a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.cross-pos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.collection{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-template-columns: 1fr 1fr; */
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.collection div{
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    display: flex;
+    flex-direction: column;
+}
+
+.collection div:hover{
+    transform: translateY(-10px);
+    /* background: #262626; */
+}
+
+.collection div img{
+    width: 100%;
+    border-radius: 5px;
+    aspect-ratio: 4/2;
+}
+
+.collection div p{
+    padding-top: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+.collection div a:link{
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: underline;
+}
 /* ----------------contact-me----------------- */
 #contact{
     padding: 50px 0;
@@ -542,6 +652,12 @@ nav .fa-solid{
 
     .btn{
         font-size: 15px;
+    }
+
+    .collection{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
     }
 }
 
