@@ -15,7 +15,7 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="assets/logo.png" class="logo">
+                <img src="assets/img/logo.png" class="logo">
                 <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -36,7 +36,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="assets/my_pic.png">
+                    <img src="assets/img/my_pic.png">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -86,60 +86,40 @@
     <div id="portfolio">
         <div class="container">
             <h1 class="sub-title">My Projects</h1>
-            <div class="work-list" id="grid-block">
-                <div onclick="openBlock('web-design')">
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>It's the process of planning, conceptualizing, and implementing the plan for designing a website in a way that is functional and offers a good user experience. Designed a few responsive and interactive website</p>
-                    <a>learn more</a>
-                </div>
-                <!-- <div onclick="openBlock('app-design')">
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>App Design</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non saepe autem quo vel unde ipsum eos! Autem consequatur minus repellendus ipsum, corrupti doloribus nostrum officia qui ab! Impedit, reprehenderit sit!</p>
-                    <a>learn more</a>
-                </div> -->
-                <div onclick="openBlock('uiux-design')">
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Converting your idea's to a design is what i am good at! <br>Created Logo, Posters, Pamplets, Menu.<br>Look at few Projects which I have worked on</p>
-                    <a>learn more</a>
-                </div>
-            </div>
-            <div class="work-blocks" id="web-design">
-                <div class="cross-pos">
-                    <i class="fa-solid fa-code"></i>
-                    <i class="fa-solid fa-circle-xmark cross" onclick="closeblock()"></i>
-                </div>
-                <h2>Web Design</h2>
-                <p>Its the process of planning, conceptualizing, and implementing the plan for designing a website in a way that is functional and offers a good user experience.<br>Designed a few responsive and interactive websites</p>
-                <div class="collection">
-                    <div>                        
-                        <a href="https://surajs1602.github.io" target="_blank"><img src="assets/web-pic-1.png" alt="pic_1">surajs1602.github.io</a>
-                        <p>Portfolio Website build from scratch using HTML CSS JS</p>
-                    </div>
-                    <div>
-                        <a href="https://sheetgames.wordpress.com" target="_blank"><img src="assets/sheet-games.png" alt="pic_2">
-                            sheetgames.wordpress.com</a>
-                        <p>A website created and hosted on wordpress.</p>
+            <div class="portfolio-inner" id="grid-block">
+                <div class="portfolio-item-wrapper" onclick="toggleBlock(this)">
+                    <span class="cross-pos" >
+                        <i class="fa-solid fa-code"></i>
+                        <i class="fa-solid fa-circle-xmark cross"></i>
+                    </span>
+                    <div id="web-design" class="portfolio-item">
+                        <h2>Web Design</h2>
+                        <p>It's the process of planning, conceptualizing, and implementing the plan for designing a website in a way that is functional and offers a good user experience. Designed a few responsive and interactive website</p>
+                        <div id="web-collection" class="collection">
+                            <div>
+                                <a href="https://surajs1602.github.io" target="_blank"><img src="assets/img/web-pic-1.png" alt="pic_1">surajs1602.github.io</a>
+                                <p>Portfolio Website build from scratch using HTML CSS JS</p>
+                            </div>
+                            <div>
+                                <a href="https://sheetgames.wordpress.com" target="_blank"><img src="assets/img/sheet-games.png" alt="pic_2">
+                                    sheetgames.wordpress.com</a>
+                                <p>A website created and hosted on wordpress.</p>
+                            </div>
+                        </div>
+                        <a class="learn">learn more...</a>
                     </div>
                 </div>
-            </div>
-            <div class="work-blocks" id="app-design">
-                <div class="cross-pos">
-                    <i class="fa-solid fa-app-store"></i>
-                    <i class="fa-solid fa-circle-xmark cross" onclick="closeblock()"></i>
+                <div class="portfolio-item-wrapper"  onclick="toggleBlock(this)">
+                    <span class="cross-pos">
+                        <i class="fa-solid fa-crop"></i>
+                        <i class="fa-solid fa-circle-xmark cross"></i>
+                    </span>
+                    <div class="portfolio-item" id="uiux-design" >
+                        <h2>UI/UX Design</h2>
+                        <p>Converting your idea's to a design is what i am good at! <br>Created Logo, Posters, Pamplets, Menu.<br>Look at few Projects which I have worked on</p>
+                        <a class="learn">learn more...</a>
+                    </div>
                 </div>
-                <h2>App Design</h2>
-                <p>...</p>
-            </div>
-            <div class="work-blocks" id="uiux-design">
-                <div class="cross-pos">
-                    <i class="fa-solid fa-crop"></i>
-                    <i class="fa-solid fa-circle-xmark cross" onclick="closeblock()"></i>
-                </div>
-                <h2>UI/UX Design</h2>
-                <p>Converting your idea's to a design is what i am good at! Created Logo, Posters, Pamplets, Menu.<br>Look at few Projects which I have worked on</p>
             </div>
         </div>
     </div>
