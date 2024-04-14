@@ -66,7 +66,8 @@ nav ul li a:hover::after{
 }
 
 .header-text{
-    margin-top: 30%;
+    position: absolute;
+    bottom: 10%;
     font-size: 20px;
 }
 
@@ -446,7 +447,6 @@ nav .fa-solid{
     }
 
     .header-text{
-        margin-top: 40%;
         font-size: 30px;
     }
 
@@ -461,7 +461,6 @@ nav .fa-solid{
 
 @media only screen and (max-width:760px){
     .header-text{
-        margin-top: 80%;
         font-size: 30px;
     }
 
@@ -557,7 +556,6 @@ nav .fa-solid{
     }
 
     .header-text{
-        margin-top: 110%;
         font-size: 20px;
     }
     
