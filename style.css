@@ -646,6 +646,10 @@ nav .fa-solid{
         font-size: 15px;
     }
 
+    .portfolio-item-wrapper{
+        min-width: 100%;
+    }
+
     .collection{
         display: flex;
         flex-direction: column;
