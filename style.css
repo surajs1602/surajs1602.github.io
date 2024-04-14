@@ -655,6 +655,11 @@ nav .fa-solid{
         flex-direction: column;
         margin-top: 50px;
     }
+
+    /* ---------temp-fix--------- */
+    .collection div{
+        width: 80%;
+    }
 }
 
 /* ---------------1280px---------------- */
