@@ -17,7 +17,7 @@ body{
 #header{
     width: 100%;
     height: 100dvh;
-    background-image: url(assets/background.jpg);
+    background-image: url(assets/img/background.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -191,34 +191,38 @@ nav ul li a:hover::after{
     padding: 30px 0;
 }
 
-.work-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-
-.work-list div{
-    background: #262626;
+.portfolio-item-wrapper{
+    min-width: calc(50% - 20px);
     padding: 40px;
+    background: #262626;
+    flex: 1;
     font-size: 13px;
     font-weight: 500;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
 }
 
-.work-list div i{
+.portfolio-item-wrapper:hover{
+    background: #c669e1;
+    transform: translateY(-10px);
+    /* transition: all 0.5s ease; */
+    color: #080808;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.portfolio-item-wrapper i{
     font-size: 50px;
     margin-bottom: 30px;
 }
 
-.work-list div h2{
+.portfolio-item-wrapper h2{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-.work-list div a{
+.portfolio-item-wrapper a{
     text-decoration: none;
     color: #fff;
     font-size: 12px;
@@ -226,48 +230,49 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 
-.work-list div:hover{
-    background: #c669e1;
-    transform: translateY(-10px);
-    color: #080808;
-    font-weight: 500;
-    padding-bottom: 10px;
-    cursor: pointer;
-}
-
-.work-list.disable{
+.portfolio-item-wrapper .fa-circle-xmark, .portfolio-item-wrapper .collection{
     display: none;
 }
 
-.work-blocks{
-    display: none;
-    grid-gap: 40px;
+.portfolio-inner{
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 50px;
-    transition: 0.5s;
+    gap: 40px;
 }
 
-.work-blocks.active-block{
+.portfolio-item-wrapper.expanded .fa-circle-xmark{
     display: block;
+}
+
+.portfolio-item-wrapper.expanded .collection{
+    display: grid;
+}
+
+.portfolio-item-wrapper.expanded .learn{
+    display: none;
+}
+
+.portfolio-item-wrapper.expanded{
+    min-width: 100%;
+}
+
+.portfolio-item-wrapper.expanded:hover{
     background: #262626;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 500;
-    border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
+    color: #fff;
 }
 
-.work-blocks.active-block:hover{
-    /* background: #c669e1; */
-    /* color: #080808; */
-    transform: translate3d(0,-10px,1000px);
+.portfolio-item-wrapper span{
+    display: flex;
+    justify-content: space-between;
 }
 
-.work-blocks.active-block i{
+.portfolio-item-wrapper span i{
     font-size: 50px;
     margin-bottom: 30px;
 }
 
-.work-blocks.active-block i.cross{
+.portfolio-item-wrapper span i.cross{
     font-size: 25px;
     cursor: pointer;
     top: 2px;
@@ -278,37 +283,27 @@ nav ul li a:hover::after{
     transition: 0.5s;
 }
 
-.work-blocks.active-block i.cross:hover{
+.portfolio-item-wrapper span i.cross:hover{
     color: #c669e1;
     /* font-size: 27px; */
     font-weight: 500;
 }
 
-.work-blocks.active-block h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
+.portfolio-item-wrapper.expanded ~.portfolio-item-wrapper{
+    width: 100%;
 }
 
-.work-blocks.active-block a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
+.portfolio-item-wrapper ~.portfolio-item-wrapper.expanded{
+    width: 100%;
 }
 
-.cross-pos{
-    display: flex;
-    justify-content: space-between;
-}
+/* -----------collection-------------- */
 
 .collection{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* grid-template-columns: 1fr 1fr; */
     grid-gap: 40px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .collection div{
@@ -323,7 +318,6 @@ nav ul li a:hover::after{
 
 .collection div:hover{
     transform: translateY(-10px);
-    /* background: #262626; */
 }
 
 .collection div img{
@@ -448,7 +442,7 @@ nav .fa-solid{
 /* ----------1080px------------ */
 @media only screen and (max-width:1080px){
     #header{
-        background-image: url(assets/background_850.jpg);
+        background-image: url(assets/img/background_850.jpg);
     }
 
     .header-text{
@@ -559,7 +553,7 @@ nav .fa-solid{
 @media only screen and (max-width:550px){
     #header{
         margin-top: 5px;
-        background-image: url(assets/background_mob.jpg);
+        background-image: url(assets/img/background_mob.jpg);
     }
 
     .header-text{
